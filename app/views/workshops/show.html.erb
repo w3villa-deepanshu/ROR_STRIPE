@@ -22,8 +22,9 @@
     <div class="col-lg-4">
         <div class="card shadow mb-3">
             <div class="card-body">
+            <% if @workshop.is_upcoming_workshop? %>
                 <h4 class="card-title mb-2"> Reserve your sit now ! </h4>
-                <%= form_with url: "#",data: { turbo: false } do |form|%>
+                <%= form_with url: :bookings, data: { turbo: false } do |form|%>
                     <%= form.hidden_field :workshop_id , value: @workshop.id%>
                     <div class="form-group">
                         <%= form.label :full_name , class: "mb-2 mt-2"%>
@@ -71,9 +72,10 @@
                     <div class="d-grid gap-2">
                         <%= form.submit "Book Your Tickets Now",class:"btn btn-outline-danger btn-lg mt-3"%>
                     </div>
-
-                    
                 <% end %>
+                 <% else %>
+              <h2>Past</h2>
+            <% end %>
             </div>
         </div>
     </div>

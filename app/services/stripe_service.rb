@@ -47,4 +47,9 @@ class StripeService
             description:"amount #{amount_to_be_paid} charged for #{workshop.name}"
         })
     end
+
+    def create_stripe_refund(stripe_charge_id)
+        Stripe::Refund.create({charge:stripe_charge_id})
+    end
+
 end

@@ -32,6 +32,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'dotenv-rails'
+  gem "letter_opener"
+
 end
 
 group :development do
@@ -59,3 +61,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'cssbundling-rails'
 gem "importmap-rails", "~> 1.1"
 gem "stripe"
+gem "rqrcode", "~> 2.0"
+gem 'friendly_id', '~> 5.1.0', require: "friendly_id"
+gem 'devise'

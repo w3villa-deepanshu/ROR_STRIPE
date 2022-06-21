@@ -42,6 +42,30 @@ puts " workshop start building"
 		total_sit: 100 ,
 		remaining_sits: 0 ,
 		registration_fees: 1500
+	},
+	{
+		name: " Full Stack Mern Development Bootcamp",
+		description: " Some dummy description for workshop . Some dummy description for workshop . Some dummy description for workshop . Some dummy description for workshop .
+						Some dummy description for workshop . Some dummy description for workshop" ,
+		start_date: Date.today - 9.days ,
+		end_date: Date.today - 2.days ,
+		start_time: " 10:00 AM " ,
+		end_time: " 3:00 PM " ,
+		total_sit: 100 ,
+		remaining_sits: 0 ,
+		registration_fees: 1500
+	},
+	{
+		name: " Full Stack Mern Development Bootcamp",
+		description: " Some dummy description for workshop . Some dummy description for workshop . Some dummy description for workshop . Some dummy description for workshop .
+						Some dummy description for workshop . Some dummy description for workshop" ,
+		start_date: Date.today - 12.days ,
+		end_date: Date.today - 10.days ,
+		start_time: " 10:00 AM " ,
+		end_time: " 3:00 PM " ,
+		total_sit: 100 ,
+		remaining_sits: 0 ,
+		registration_fees: 1500
 	},])
 
 puts "workshop data end"
