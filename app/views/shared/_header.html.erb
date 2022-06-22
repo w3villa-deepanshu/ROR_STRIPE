@@ -9,9 +9,16 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        
+                <% if admin_user_signed_in? %>
+          <li class="nav-item">
+          <%=link_to 'log out' ,destroy_admin_user_session_path, method: :delete,class:"nav-link active"%>
         </li>
+        <% else %>
+           <li class="nav-item">
+          <%=link_to 'Sign In' ,new_admin_user_session_path,class:"nav-link active"%>
+        </li>
+        <% end %>
       </ul>
     </div>
   </div>
